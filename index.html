@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List App with VanillaJS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body>
+    <div class="bg-image bg-image-light">
+        <div class="container">
+            <div class="top-menu">
+                <div class="left">
+                    <h1>TODO</h1>
+                </div>
+                <div class="right">
+                    <img src="images/icon-moon.svg" alt="icon-moon" class="mode" id="dark-mode">
+                    <img src="images/icon-sun.svg" alt="icon-sun" class="mode" id="light-mode">
+                </div>
+            </div>
+            <input type="text" name="inputTask" id="inputTask" placeholder="Create a new todo...">
+            <div class="tasksList">
+            </div>
+            <div class="bottom-menu">
+                <div class="task-count"></div>
+                <div class="clear-completed">Clear Completed</div>
+            </div>
+            <div class="filter-task">
+                <div class="filter-btns allBtn selected">All</div>
+                <div class="filter-btns activeBtn">Active</div>
+                <div class="filter-btns completedBtn">Completed</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
